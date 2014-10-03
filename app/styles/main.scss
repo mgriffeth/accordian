@@ -1,0 +1,87 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+$w:900px;
+$inactive_color: gray;
+$active_color: orange;
+
+@mixin box_stats{
+  width:$w;
+  border-style:solid;
+  margin-left:  auto;
+  margin-right: auto;
+  background-color:$inactive_color;
+  border-radius:15px;
+  border-width:1px;
+  display:block;
+  float:left;
+}
+@mixin title{
+    height: 60px;
+    margin:0;
+    padding-left:10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display:block;
+}
+// Custom Styles
+body {
+
+  .container{
+    width:$w;
+    height:300px;
+    margin-left:  auto;
+    margin-right: auto;
+    border-style: solid;
+    overflow: hidden;
+
+
+      #no1{
+        @include box_stats;
+        }
+      #no2{
+        @include box_stats;
+        clear:both;
+
+        }
+      #no3{
+        @include box_stats;
+        }
+  }
+}
+h2{
+  @include title;
+
+}
+h2:hover{
+  background-color:$active_color;
+  transition:background-color 1.5s ease;
+}
+p{
+  padding:15px;
+  height:120px;
+  margin:0;
+}
+
+section{
+  height:60px;
+  width:$w;
+  overflow:hidden;
+
+
+  .box{
+    p{
+      height:120px;
+    }
+  }
+}
+.inactiveBox{
+
+}
+
+.activeBox{
+  width:$w;
+  height:180px;
+  margin-left:auto;
+  margin-right:auto;
+}
