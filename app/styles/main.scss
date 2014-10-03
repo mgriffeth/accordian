@@ -82,9 +82,11 @@ section{
   margin-left:auto;
   margin-right:auto;
     h2, p{
-    background-color:orange;
+    background-color:$active_color;
     transition:height 1s ease;
+    transition:background-color 1.5s ease;
     color:$inactive_color;
+    transition:color 1.5z ease;
   }
   h2:hover{
     color:$inactive_color;
