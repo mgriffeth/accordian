@@ -11,7 +11,6 @@ $active_color: orange;
   margin-left:  auto;
   margin-right: auto;
   background-color:$inactive_color;
-  border-radius:15px;
   border-width:1px;
   display:block;
   float:left;
@@ -20,8 +19,6 @@ $active_color: orange;
     height: 60px;
     margin:0;
     padding-left:10px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
     display:block;
 }
 // Custom Styles
@@ -32,8 +29,8 @@ body {
     height:300px;
     margin-left:  auto;
     margin-right: auto;
-    border-style: solid;
     overflow: hidden;
+    background-color:none;
 
 
       #no1{
@@ -67,6 +64,7 @@ section{
   height:60px;
   width:$w;
   overflow:hidden;
+  transition:height 1s ease;
 
 
   .box{
@@ -74,9 +72,6 @@ section{
       height:120px;
     }
   }
-}
-.inactiveBox{
-
 }
 
 .activeBox{
