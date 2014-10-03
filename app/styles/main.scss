@@ -7,11 +7,10 @@ $active_color: orange;
 
 @mixin box_stats{
   width:$w;
-  border-style:solid;
   margin-left:  auto;
   margin-right: auto;
   background-color:$inactive_color;
-  border-width:1px;
+
   display:block;
   float:left;
 }
@@ -20,17 +19,21 @@ $active_color: orange;
     margin:0;
     padding-left:10px;
     display:block;
-}
+    font-family: 'Sarpanch', sans-serif;
+    padding-top: 14px;
+    }
 // Custom Styles
 body {
 
   .container{
     width:$w;
     height:300px;
+    margin-top:10px;
     margin-left:  auto;
     margin-right: auto;
     overflow: hidden;
     background-color:none;
+    /*border-raidus:15px;*/
       #no1{
         @include box_stats;
         }
@@ -45,12 +48,14 @@ body {
 
 h2{
   @include title;
+  color:white;
+
 
 }
 h2:hover{
   /*background-color:$active_color;
   transition:background-color 1.5s ease;*/
-  color:HSLA(145, 63%, 49%, 1);
+  color:$active_color;
 }
 
 p{
@@ -79,5 +84,12 @@ section{
     h2, p{
     background-color:orange;
     transition:height 1s ease;
+    color:$inactive_color;
+  }
+  h2:hover{
+    color:$inactive_color;
+  }
+  .box{
+    padding-bottom:10px;
   }
 }
