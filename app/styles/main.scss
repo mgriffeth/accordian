@@ -62,13 +62,17 @@ p{
   padding:15px;
   height:120px;
   margin:0;
+
+
 }
 
 section{
   height:60px;
   width:$w;
   overflow:hidden;
-  transition:height 1s ease;
+  transition:height 1.5s ease;
+  color:$inactive_color;
+
   .box{
     p{
       height:120px;
@@ -83,10 +87,7 @@ section{
   margin-right:auto;
     h2, p{
     background-color:$active_color;
-    transition:height 1s ease;
-    transition:background-color 1.5s ease;
     color:$inactive_color;
-    transition:color 1.5z ease;
   }
   h2:hover{
     color:$inactive_color;
